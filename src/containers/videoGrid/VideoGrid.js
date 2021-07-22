@@ -10,7 +10,7 @@ const VideoGrid = (props) => {
     })
 
     return (
-        <div>
+        <div id="video-grid">
             {mappedFeed ? mappedFeed : null}
         </div>
     );
