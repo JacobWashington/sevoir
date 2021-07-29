@@ -40,5 +40,9 @@ function addVideoStream(video, stream) {
     video.play();
   });
   videoGrid.append(video);
+<<<<<<< HEAD
   console.log(typeof(video))
 }
+=======
+}
+>>>>>>> 5ef74f77ea90b7b1e6e0f0fd1d11267f55c1b3ed
