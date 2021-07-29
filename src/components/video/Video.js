@@ -1,9 +1,11 @@
 import React from 'react';
 
 const Video = () => {
+
+// sets video src to stream object
     return (
         <div>
-            <video id="video" autoPlay></video>
+            <video autoPlay></video>
         </div>
     );
 }
