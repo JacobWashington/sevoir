@@ -1,4 +1,10 @@
 const videoGrid = document.getElementById('video-grid');
+const io = require("socket.io-client");
+const socket = io('localhost://3000/stream')
+
+socket.io.on("error", (error) => {
+  console.log(error)
+});
 
 function hasUserMedia() {
   //check if the browser supports the WebRTC
@@ -34,4 +40,5 @@ function addVideoStream(video, stream) {
     video.play();
   });
   videoGrid.append(video);
+  console.log(typeof(video))
 }
