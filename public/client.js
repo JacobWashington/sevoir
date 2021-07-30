@@ -3,7 +3,7 @@ let name;
 let connectedUser;
 
 //connecting to our signaling server
-let conn = new WebSocket("wss://sevoir-server3.web.app:9090");
+let conn = new WebSocket("wss://sevoir-server3.web.app:9090", "wss");
 
 conn.onopen = function () {
   console.log("Connected to the signaling server");
